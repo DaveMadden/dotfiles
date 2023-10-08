@@ -15,6 +15,10 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup({
 	-- setup formatters & linters
 	sources = {
+		-- for go?
+		formatting.gofumpt,
+		-- formatting.goimports_reviser,
+		formatting.golines,
 		--  to disable file types use
 		--  "formatting.prettier.with({disabled_filetypes = {}})" (see null-ls docs)
 		formatting.prettier, -- js/ts formatter
@@ -22,7 +26,7 @@ null_ls.setup({
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
 			condition = function(utils)
-				return utils.root_has_file(".eslintrc.js") -- change file extension if you use something else
+				return utils.root_has_file(".eslintrc.json") -- change file extension if you use something else
 			end,
 		}),
 	},

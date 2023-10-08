@@ -124,10 +124,20 @@ _G.packer_plugins = {
     path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  gofumpt = {
+    loaded = true,
+    path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/gofumpt",
+    url = "https://github.com/mvdan/gofumpt"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
@@ -158,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -216,6 +231,11 @@ _G.packer_plugins = {
     path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  sonokai = {
+    loaded = true,
+    path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -225,6 +245,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/davidmadden/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["typescript.nvim"] = {
     loaded = true,

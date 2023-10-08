@@ -32,8 +32,11 @@ return packer.startup(function(use)
 
 	-- color schemes
 	use("sainnhe/everforest")
+	use("sainnhe/sonokai")
 	use("GlennLeo/cobalt2")
 	use("catppuccin/nvim")
+	use("EdenEast/nightfox.nvim") -- Packer
+	use("folke/tokyonight.nvim")
 
 	-- use("christoomey/vim-tmux-navigator") -- actually i want <C-j> etc for harpoon
 	use("szw/vim-maximizer")
@@ -112,6 +115,20 @@ return packer.startup(function(use)
 	use("theprimeagen/harpoon")
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
+
+	use("lukas-reineke/indent-blankline.nvim")
+
+	use("mvdan/gofumpt")
+	-- use("incu6us/goimports-reviser")
+
+	-- use({
+	-- 	"laytan/tailwind-sorter.nvim",
+	-- 	requires = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
+	-- 	config = function()
+	-- 		require("tailwind-sorter").setup()
+	-- 	end,
+	-- 	run = "cd formatter && npm i && npm run build",
+	-- })
 
 	if packer_bootstrap then
 		require("packer").sync()

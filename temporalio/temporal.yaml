@@ -1,0 +1,6 @@
+env:
+    default: {}
+    dev:
+        address: temporal-svc.dev.vannevarlabs.com:7233
+    prd:
+        address: temporal-svc.app.vannevarlabs.com:7233

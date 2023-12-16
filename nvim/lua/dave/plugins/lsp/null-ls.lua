@@ -22,7 +22,7 @@ null_ls.setup({
 		--  to disable file types use
 		--  "formatting.prettier.with({disabled_filetypes = {}})" (see null-ls docs)
 		formatting.prettier.with({
-			extra_args = { "--html-whitespace-sensitivity", "ignore", "--print-width", "100" },
+			extra_args = { "--html-whitespace-sensitivity", "ignore", "--print-width", "80" },
 		}), -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		diagnostics.eslint_d.with({ -- js/ts linter

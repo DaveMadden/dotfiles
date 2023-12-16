@@ -39,7 +39,7 @@ return packer.startup(function(use)
 	use("folke/tokyonight.nvim")
 	use("gertjanreynaert/cobalt2-vim-theme")
 
-	-- use("christoomey/vim-tmux-navigator") -- actually i want <C-j> etc for harpoon
+	use("christoomey/vim-tmux-navigator") -- actually i want <C-j> etc for harpoon
 	use("szw/vim-maximizer")
 
 	-- essential plugins
@@ -87,6 +87,8 @@ return packer.startup(function(use)
 			{ "nvim-treesitter/nvim-treesitter" },
 		},
 	})
+
+	-- tmux stuff
 
 	-- enhanced lsp uis
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)

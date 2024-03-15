@@ -115,7 +115,7 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
 	-- from theprimeagen's setup
-	use("theprimeagen/harpoon")
+	-- use("theprimeagen/harpoon")
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
 

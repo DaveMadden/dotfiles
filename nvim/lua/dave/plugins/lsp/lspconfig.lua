@@ -85,14 +85,19 @@ lspconfig["cssls"].setup({
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "templ" },
+	init_options = {
+		userLanguages = {
+			templ = "html",
+		},
+	},
 })
 
 -- configure emmet language server
 lspconfig["emmet_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "templ" },
 })
 
 -- configure lua server (with special settings)
@@ -122,6 +127,12 @@ lspconfig["gopls"].setup({
 	on_attach = on_attach,
 	cmd = { "gopls" },
 	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+})
+
+lspconfig["templ"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "templ" },
 })
 
 -- configure jedi language server for Python
